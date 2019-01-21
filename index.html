@@ -8,37 +8,62 @@
     <title>PhotoWebPlace</title>
   </head>
   <body>
-
     <header>
-        <h1>Comenzando con la Fotografía</h1>
-        <navbar id="menu-principal">
-          <a href="./retratos.html">Retratos</a>
-          <a href="./paisajes.html">Paisajes</a>
-          <p> Inicio <p>
-        </navbar>
+        <div class="titulo">
+          <h1>Comenzando con la Fotografía</h1>
+        </div>
+        <div class="menu">
+          <nav id="menu">
+            <ul>
+              <li>Inicio</li>
+              <li><a href="./paisajes.html">Paisajes</a></li>
+              <li><a href="./retratos.html">Retratos</a></li>
+            </ul>
+          </nav>
+        </div>
     </header>
-
-    <section id="img-central">
-      <img src="./images/index_Central.png">
+    <section id="contenido">
+      <section id="Foto-Central">
+        <img src="./images/Index_Central.png" class="img-adaptativa">
+      </section>
+      <section id="Fotos_Sec">
+        <div>
+          <figure>
+            <a href="./paisajes.html"><img id="paisajes" src="./images/IMG_Secundaria2.jpg" title="Paisajes"  class="img-adaptativa"></a>
+            <figcaption>Paisajes</figcaption>
+          </figure>
+        </div>
+        <div class="Retratos">
+          <figure>
+            <a href="./retratos.html"><img id="retratos" src="./images/IMG_Secundaria1.jpeg" title="Retratos"  class="img-adaptativa"></a>
+            <figcaption>Retratos</figcaption>
+          </figure>
+        </div>
+      </section>
     </section>
-
-    <section id="img-sec">
-    	<section id="images-sec">
-    		<div class="imagenes-sec">
-    			<div>
-            <figure id="paisajes">
-              <a href="./paisajes.html"><img src="./images/IMG_Secundaria2.jpg"></a>
-              <figcaption>Paisajes</figcaption>
-            </figure>
-    			</div>
-    			<div>
-            <figure id="retratos">
-              <a href="./retratos.html"><img src="./images/IMG_Secundaria1.jpeg"></a>
-              <figcaption>Retratos</figcaption>
-            </figure>
-          </div>
-    		</div>
-    	</section>
-
-  </body>
+    <footer>
+      <div class="Contacto">
+          <h2>Contacto</h2>
+          <p>Correo Electrónico: <a href="mailto:cmarraezc@gmail.com" style="color: purple">cmarraezc@gmail.com</a><br>
+          Av. Alameda 157, Callao, Perú<br>
+          Telf. +51941061847 </p>
+      </div>
+      <div class="Terminos">
+        <h2>Términos</h2>
+        <p> Conoce nuestros términos y condiciones </p>
+      </div>
+      <div class="Redes">
+        <h2>Redes Sociales</h2>
+        <p>
+          <img src="./images/facebook.png" id="facebook" class="rrss"><a style="color: purple" href="https://www.facebook.com/cinthya.milagros">      Cinthya Milagros  </a><br>
+          <img src="./images/instaram.jpg" id="instagram" class="rrss"><a style="color: purple" href="https://www.instagram.com/cinthya.milagros/?hl=es-la">      Cinthya.Milagros  </a><br>
+          <img src="./images/twitter.png" id="twitter" class="rrss"><a style="color: purple" href="https://twitter.com/Cinthya_Arraez">      @Cinthya_Arraez  </a><br>
+        </p>
+      </div>
+      <div class="Derechos">
+        <h2>Derechos Reservados</h2>
+        <p> &copy Copyright 2019 </p>
+      </div>
+    </footer>
+</body>
 </html>
