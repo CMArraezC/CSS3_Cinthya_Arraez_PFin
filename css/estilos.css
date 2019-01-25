@@ -63,6 +63,13 @@ flex-direction: row;
 text-align: center;
 }
 
+#Galeria {
+background: #d5c75f;
+display: flex;
+flex-direction: row;
+text-align: center;
+}
+
 img{
   border: 2px solid black;
   box-shadow: 2px 2px 2px #02010a;
@@ -85,6 +92,21 @@ color: black;
 #retratos:hover {
   animation-name: retratos;
   animation-duration: 1s;
+}
+
+#paisajes1 {
+    -webkit-filter: blur(10px);
+    filter:blur(10px);
+}
+
+#paisajes2 {
+    -webkit-filter: grayscale(100%);
+    filter:grayscale(100%);
+}
+
+#paisajes3 {
+    -webkit-filter: sepia(90%);
+    filter:sepia(90%);
 }
 
 @-webkit-keyframes paisajes {
@@ -173,6 +195,11 @@ p {
     }
 
     #Fotos_Sec {
+    display: flex;
+    flex-direction: column;
+    }
+
+    #Galeria {
     display: flex;
     flex-direction: column;
     }
